@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>challenge your age in days</title>
+	<meta charset="UTF-8">
+	<meta name ="viewport" content="width = device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container"> <!-- container start -->
+
+		<div id ="challenge1">
+			<h2>Challenge1 : Your Age in Days</h2>
+			<hr>
+			<div class="buttons">
+				<button class="blue" onclick="ageInDays('hello world')">Click me</button>
+				<button class="red" onclick="reset()">reset</button>
+			</div>
+			<hr>
+			<div class="fillMe"></div>
+		</div>
+
+		<div id="challenge2">
+			<h2>Challenge2 : Cat Generator</h2>
+			<hr>
+			<button class="green" onclick="generate()">Generate Cat</button>
+			<button class="red" onclick="resetImage()">reset</button>
+			<hr>
+			<div class ="flexBox">
+				
+			</div>
+		</div>
+
+		<div id="challenge3">
+			<h2>Challenge3 : Rock,Paper,Scissors</h2>
+			<hr>
+			<div class="flexBox">
+				<img src="images/rock.jpg" class="rock" onclick="rpsGame(this.className)">
+				<img src="images/paper.jpg" class="paper" onclick="rpsGame(this.className)">
+				<img src="images/scissors.jpg" class="scissors" onclick="rpsGame(this.className)">
+			</div>
+			<hr>
+			<h3>Computer says:</h3>
+			<div class="computerResponse">
+
+			</div>
+			<div class="winORlose">
+				
+			</div>
+
+
+		</div>
+
+		<div id="challenge4">
+			<h2>Challenge4 : Change the Color</h2>
+			<hr>
+			<div class="flexBox">
+				<form>
+					<select name="backdrop" onchange='challenge4()'>
+						<option value="reset">reset</option>
+						<option value="blue">blue</option>
+						<option value="red">red</option>
+						<option value="green">green</option>
+						<option value="yellow">yellow</option>
+						<option value="random">random</option>
+					</select>
+				</form>
+				<button class="blue">hello</button>
+				<button class="red">yeah</button>
+				<button class="yellow">woo!</button>
+				<button class="green">wesh</button>
+			</div>
+		</div>
+
+		<div id="blackJack" style="border: 2px solid black">
+			<h2>Challenge5: Black Jack</h2>
+			<hr>
+			<h3>Let's play</h3>
+			<div id='theGame' style="width:100%;height:600px">
+				<div class='player' style="float:left;">
+					<h2 class="userScore">You : 0</h2>
+					<div class ="userLuck"></div>
+				</div>
+				<div class="computer" style="float:right">
+					<h2 class="computerScore">Computer : 0</h2>
+					<div class="computerLuck"></div>
+				</div>
+				<div class="choice">
+					<div class="buttons">
+							<button id="hit" class="blue" onclick="hit()">Hit</button>
+							<button id="stand" class="yellow" onclick="stand()">Stand</button>
+							<button id="deal" class="red" onclick="deal()">Deal</button>
+					</div>
+				</div>
+
+			</div>
+			<div class="scoreTable" style="margin:auto">
+				<table style ="margin:10px auto;">
+					<thead>
+						<tr>
+							<th style ="color:green">Wins</th>
+							<th style ="color:#CCCC00">Draws</th>
+							<th style ="color:red">Losses</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="wins">0</td>
+							<td class="draws">0</td>
+							<td class="losses">0</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+
+
+	</div><!-- container end -->
+	<div style="margin:200px 0"></div>
+
+	<script src="js/home.js"></script>
+</body>
+</html>

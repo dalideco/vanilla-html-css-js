@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>i forgot and want to try the challenge again</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<div class="container">
+		<div id="challenge1">
+			<h2>Challenge1 : your Age in days !!</h2>
+			<hr>
+			<div class ="buttons">
+				<button class="blue" onclick="ageInDays()">Click me</button>
+				<button class="red" onclick= "reset('challenge1','showAge','h2')">reset</button>
+			</div>
+			<hr>
+			<div class="showAge"></div>
+		</div>
+		<div id="challenge2">
+			<h2>Challenge2:show Cat!</h2>
+			<hr>
+			<div class="buttons">
+				<button class="green" onclick="generate()">generate</button>
+				<button class="red" onclick="reset('challenge2','flexBox','img')">reset</button>
+			</div>
+			<hr>
+			<div class="flexBox"></div>
+		</div>
+		<div id="challenge3">
+			<h2>Challenge3 : rock paper scissors !!</h2>
+			<hr>
+			<div class="flexBox">
+				<img src="images/rock.jpg" class="rock" onclick="rpsGame(this.className)">
+				<img src="images/scissors.jpg" class="scissors" onclick="rpsGame(this.className)">
+				<img src="images/paper.jpg" class="paper" onclick="rpsGame(this.className)">
+			</div>
+			<hr>
+			<h2>computer choice :</h2>
+			<div class="computerChoice">
+				
+			</div>
+			<hr>
+			<div class="message">
+				
+			</div>
+		</div>
+		<div id="challenge4">
+			<h2>Challenge4 : blackJack</h2>
+			<hr>
+			<div class="GAME">
+				<div class="playerCards">
+					<div class="playerScore" style="margin:0 auto;"><h2>Your score:0</h2></div>
+					<div class="showCards"></div>
+				</div>
+				<div class="computerCards">
+					<div class="computerScore" style="margin:0 auto;"><h2>ComputerScore : 0</h2></div>
+					<div class="showCards"></div>
+				</div>
+				<div class="gameButtons">
+					<button class="blue" onclick="draw()">draw</button>
+					<button class="yellow" onclick="stand()">stand</button>
+					<button class="red" onclick="resetGame()">reset</button>
+				</div>
+			</div>
+			<div class="scoreTable" style="margin:10px auto;">
+				<table style="margin : auto;">
+					<thead>
+						<tr>
+							<th>Wins</th>
+							<th>draws</th>
+							<th>losses</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="wins">0</td>
+							<td class="draws">0</td>
+							<td class="losses">0</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+		<div id = "challenge5">
+			<h2>Challenge 5 : change the color </h2>
+			<hr>
+			<div class="buttons">
+				<select onchange="colorSwitch(this.value)">
+					<option value ="reset">reset</option>
+					<option value ="random">random</option>
+					<option value ="blue">blue</option>
+					<option value ="red"> red</option>
+					<option value="yellow">yellow</option>
+					<option vlaue ="green">green</option>
+				</select>
+				<button class="blue">hello</button>
+				<button class="yellow">how</button>
+				<button class="green">are</button>
+				<button class="red">you</button>
+			</div>
+		</div>
+
+	</div>
+	<div style="height:200px"></div>
+	<script type="text/javascript" src ="home.js"></script>
+</body>
+</html>

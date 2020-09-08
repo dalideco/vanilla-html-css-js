@@ -1,0 +1,57 @@
+body{
+	font-size:16px;
+	line-height:1.6em;
+	font-family :sans-serif;
+	margin:0;
+
+}
+button{
+	padding:15px 30px;
+	border-radius: 5px;
+	border:none;
+	color:white;
+	box-sizing:border-box;
+}
+.container{
+	margin : auto;
+	margin-top:15px;
+	width: 70%;
+	border: 2px solid black;
+	text-align: center;
+}
+
+/*challeng1*/
+#challenge1{
+	border: 2px solid black;
+}
+#challenge1 .buttons{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#challenge1 .clickMe {
+	background-color: #1E90FF;
+}
+#challenge1 .clickMe:hover{
+	background-color:#00BFFF	;
+}
+
+#challenge1 .reset {
+	background-color: #DC143C;
+}
+#challenge1 .reset:hover{
+	background-color:#F08080	;
+}
+
+/* challenge2 */
+
+#challenge2{
+	border:2px solid black;
+}
+#challenge2 .generate{
+	background-color:#3CB371	;
+}
+#challenge2 .generate:hover{
+	background-color:#20B2AA	;
+}

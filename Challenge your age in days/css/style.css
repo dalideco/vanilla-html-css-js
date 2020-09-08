@@ -1,0 +1,162 @@
+body{
+	font-size:16px;
+	line-height:1.6em;
+	font-family :sans-serif;
+	margin:0;
+
+}
+button{
+	padding:15px 30px;
+	border-radius: 5px;
+	border:none;
+	color:white;
+	box-sizing:border-box;
+	font-family:sans-serif;
+	font-size:20px;
+}
+button:focus{
+	outline:none;
+}
+.container{
+	margin : auto;
+	margin-top:15px;
+	width: 75%;
+	border: 2px solid black;
+	text-align: center;
+}
+
+/*challeng1*/
+#challenge1{
+	border: 2px solid black;
+}
+#challenge1 button , #challenge2 button {
+	margin: 0 5%;
+}
+
+.blue {
+	background-color: #1E90FF;
+}
+.blue:hover{
+	background-color:#00BFFF	;
+}
+
+.red {
+	background-color: #DC143C;
+}
+.red:hover{
+	background-color:#F08080	;
+}
+
+/* challenge2 */
+
+#challenge2{
+	border:2px solid black;
+}
+.green{
+	background-color:#3CB371;
+}
+.green:hover{
+	background-color:#20B2AA	;
+}
+
+.flexBox {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content: space-around;
+}
+#challenge2 .box{
+	margin:10px;
+	box-shadow: 0 10px 50px rgba(0,0,0,0.7);
+	box-sizing:border-box;
+}
+
+/*challenge 3 */
+#challenge3{
+	border:2px solid black;
+}
+
+#challenge3 .flexBox img:hover{
+	box-shadow: 0 10px 50px rgba(0,0,255,0.7);
+}
+
+/* challenge4 */
+
+#challenge4{
+	box-sizing:border-box;
+	padding-bottom:20px;
+	border: 2px solid black;
+}
+
+.yellow{
+	background-color:#CCCC00;
+}
+.yellow:hover{
+	background-color:#E6E600	;
+}
+
+#challenge4 .flexBox select{
+	border-radius: .5em;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-weight:700;
+	padding: .6em 1.4em .5em .8em;
+	color:#444;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+}
+#challenge4 .flexBox select:hover{
+	border-color:#888;
+}
+#challenge4 .flexBox select:focus{
+	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+	outline:none;
+}
+#challenge4 .flexBox select option{
+	font-weight:normal;
+}
+
+/*blackJack*/
+
+#theGame{
+	margin:20px auto;
+	background-image:url('../blackjack/images/backgroundForBlackJack.jpg');
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	justify-content: space-around;
+}
+
+#theGame .player,#theGame .computer{
+	height:78%;width:49%;
+	margin:5px 2px;
+	box-sizing: border-box;
+	border: 3px solid black;
+}
+#theGame .choice{
+	margin:auto;
+	border:3px solid black;
+	width:98%;height:18%;
+}
+#theGame .choice .buttons{
+	margin:auto;
+	margin-top:25px;
+	padding:10px;
+	border: 3px solid black;
+	width : 50%;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+table,td,th{
+	border:3.5px solid black;
+	border-collapse:collapse;
+}
+
+#theGame .userLuck,#theGame .computerLuck{
+	display: flex;
+	flex-wrap : wrap;
+	flex-direction : row;
+	justify-content: space-around;
+	margin : auto;
+}
